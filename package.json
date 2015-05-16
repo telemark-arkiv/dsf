@@ -37,7 +37,7 @@
     "url": "http://github.com/telemark/dsf/issues"
   },
   "dependencies": {
-    "soap": "^0.8.0"  
+    "soap": "git+https://github.com/zrrrzzt/node-soap.git"
   },
   "devDependencies": {
     "jscs": "^1.13.1",
