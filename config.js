@@ -6,7 +6,7 @@ var config = {
   distribusjonskanal: 'PTP',
   systemnavn: 'Systemnavn',
   brukernavn: 'brukernavn',
-  passord: 'passord',
+  passord: 'passord'
+};
 
-}
 module.exports = config;
