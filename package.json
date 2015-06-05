@@ -1,21 +1,21 @@
 {
-  "name": "dsf",
-  "version": "1.1.0",
-  "description": "node.js module for looking up data from DSF (Det sentrale ifolkeregister)",
+  "name": "tfk-dsf",
+  "version": "1.0.0",
+  "description": "Look up data from DSF (Det sentrale folkeregisteret)",
   "license": "MIT",
   "author": {
-    "name": "Jonas Enge",
-    "email": "jonas.enge@t-fk.no",
-    "url": "https://github.com/telemark"
+    "name": "Geir Gåsodden",
+    "email": "geir.gasodden@pythonia.no",
+    "url": "https://github.com/zrrrzzt"
   },
   "contributors": [
     {
-      "name": "Geir Gåsodden",
-      "email": "geir.gasodden@pythonia.no",
-      "url": "https://github.com/zrrrzzt"
+      "name": "Jonas Enge",
+      "email": "jonas.enge@t-fk.no",
+      "url": "https://github.com/telemark"
     }
   ],
-  "main": "lib/dsf.js",
+  "main": "index.js",
   "engines": {
     "node": ">=0.12.0"
   },
