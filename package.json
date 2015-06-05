@@ -1,6 +1,6 @@
 {
   "name": "dsf",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "node.js module for looking up data from DSF (Det sentrale ifolkeregister)",
   "author": {
     "name": "Jonas Enge",
@@ -14,7 +14,7 @@
       "url": "https://github.com/zrrrzzt"
     }
   ],
-  "main": "index.js",
+  "main": "lib/dsf.js",
   "engines": {
     "node": ">=0.12.0"
   },
