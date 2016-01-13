@@ -1,55 +1,55 @@
-'use strict';
+'use strict'
 
-var assert = require('assert');
-var dsfLookup = require('../index');
-var masterOptions = require('./data/options.json');
+var assert = require('assert')
+var dsfLookup = require('../index')
+var masterOptions = require('./data/options.json')
 
-describe('tfk-dsf', function() {
+describe('tfk-dsf', function () {
 
-  it('requires param options to exist', function(done) {
+  it('requires param options to exist', function (done) {
 
-    var options = false;
+    var options = false
 
-    dsfLookup(options, function(err, data) {
-      assert.throws(function() {
+    dsfLookup(options, function (err, data) {
+      assert.throws(function () {
           if (err) {
-            throw err;
+            throw err
           } else {
-            console.log(data);
+            console.log(data)
           }
-        }, function(err) {
+        }, function (err) {
           if ((err instanceof Error) && /Missing required input: options object/.test(err)) {
-            return true;
+            return true
           }
         },
         'Unexpected error'
-      );
-      done();
-    });
-  });
+      )
+      done()
+    })
+  })
 
-  it('requires param options.config to exist', function(done) {
+  it('requires param options.config to exist', function (done) {
 
-    var options = JSON.parse(JSON.stringify(masterOptions));
-    options.config = false;
+    var options = JSON.parse(JSON.stringify(masterOptions))
+    options.config = false
 
-    dsfLookup(options, function(err, data) {
-      assert.throws(function() {
+    dsfLookup(options, function (err, data) {
+      assert.throws(function () {
           if (err) {
-            throw err;
+            throw err
           } else {
-            console.log(data);
+            console.log(data)
           }
-        }, function(err) {
+        }, function (err) {
           if ((err instanceof Error) && /Missing required input: options.config/.test(err)) {
-            return true;
+            return true
           }
         },
         'Unexpected error'
-      );
-      done();
-    });
-  });
+      )
+      done()
+    })
+  })
 
   it('requires param options.config.url to exist', function(done) {
 

@@ -1,6 +1,6 @@
 {
   "name": "tfk-dsf",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Look up data from DSF (Det sentrale folkeregisteret)",
   "license": "MIT",
   "author": {
@@ -17,12 +17,13 @@
   ],
   "main": "index.js",
   "engines": {
-    "node": ">=0.12.0"
+    "node": ">=4.2.4"
   },
   "scripts": {
-    "setup": "npm install && node setup.js",
-    "test": "mocha --reporter spec test/*.js",
-    "build": "./node_modules/.bin/jsdoc lib/* -d docs"
+    "test": "standard && tap --reporter=spec test/*.js",
+    "coverage": "tap test/*.js --coverage",
+    "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls",
+    "setup": "npm install && node setup.js"
   },
   "keywords": [
     "Telemark fylkeskommune",
@@ -37,12 +38,12 @@
   "bugs": {
     "url": "http://github.com/telemark/dsf/issues"
   },
-  "dependencies": {
-    "soap": "git+https://github.com/telemark/node-soap.git"
-  },
   "devDependencies": {
-    "jscs": "^1.13.1",
-    "mocha": "^2.2.4",
-    "jsdoc": "^3.3.0"
+    "coveralls": "^2.11.6",
+    "standard": "^5.4.1",
+    "tap": "^5.0.1"
+  },
+  "dependencies": {
+    "soap": "^0.11.4"
   }
 }
