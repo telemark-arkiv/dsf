@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/telemark/dsf.svg?branch=master)](https://travis-ci.org/telemark/dsf)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 # tfk-dsf
 
 Node.js module for looking up data from DSF (Det sentrale folkeregister).
@@ -28,9 +29,9 @@ $ npm run setup
 ## Usage
 
 ```javascript
-'use strict';
+'use strict'
 
-var dsfLookup = require('tfk-dsf');
+var dsfLookup = require('tfk-dsf')
 
 var config = {
   url: 'http://ws-test.infotorg.no/xml/ErgoGroup/DetSentraleFolkeregister1_4/2011-09-26/DetSentraleFolkeregister1_4.wsdl',
@@ -45,7 +46,7 @@ var query = {
   foedselsnr: '27105500837',
   etternavn: 'AMOR',
   fornavn: 'SIV'
-};
+}
 var options = {
   config:config,
   query: query
@@ -56,5 +57,5 @@ dsfLookup(options, function(error, data) {
     console.error(error);
   }
   console.log(data);
-});
+})
 ```
