@@ -1,5 +1,12 @@
 [![Build Status](https://travis-ci.org/telemark/dsf.svg?branch=master)](https://travis-ci.org/telemark/dsf)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+
+# No longer maintained
+
+This module is no longer being maintained.
+
+We have moved all development to [node-dsf](https://github.com/telemark/node-dsf)
+
 # tfk-dsf
 
 Node.js module for looking up data from DSF (Det sentrale folkeregister).
