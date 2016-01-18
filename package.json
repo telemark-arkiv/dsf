@@ -44,6 +44,6 @@
     "tap": "^5.0.1"
   },
   "dependencies": {
-    "soap": "^0.11.4"
+    "soap": "git+https://github.com/telemark/node-soap.git"
   }
 }
