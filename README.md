@@ -3,6 +3,8 @@
 
 # No longer maintained
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/dsf.svg)](https://greenkeeper.io/)
+
 This module is no longer being maintained.
 
 We have moved all development to [node-dsf](https://github.com/telemark/node-dsf)
