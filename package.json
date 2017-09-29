@@ -39,7 +39,7 @@
     "url": "http://github.com/telemark/dsf/issues"
   },
   "devDependencies": {
-    "coveralls": "^2.11.6",
+    "coveralls": "^3.0.0",
     "standard": "^10.0.0",
     "tap": "^10.0.2"
   },
