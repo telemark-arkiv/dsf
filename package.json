@@ -41,7 +41,7 @@
   "devDependencies": {
     "coveralls": "^3.0.0",
     "standard": "^10.0.0",
-    "tap": "^10.0.2"
+    "tap": "^11.0.0"
   },
   "dependencies": {
     "soap": "git+https://github.com/telemark/node-soap.git"
